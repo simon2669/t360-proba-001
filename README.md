@@ -1,1 +1,2 @@
-# t360-proba-001
+# project-html-001-about-site
+Bemutatkozó oldal elkészítése , u.p. első feladat.

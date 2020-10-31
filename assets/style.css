@@ -1,0 +1,357 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+#header {
+  margin: 1.5rem;
+  margin-left: 4.5rem;
+  float: left;
+  font-size: 1.8rem;
+}
+#nav {
+  margin-top: 1.5rem;
+  float: left;
+}
+
+#nav ul {
+  list-style: none;
+  display: inline-flex;
+  margin: 1.5rem;
+}
+#nav ul li {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+#nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+@media (max-width: 500px) {
+  #header {
+    float: none;
+  }
+  #nav ul {
+    margin: 1rem;
+  }
+  #nav ul li {
+    padding: 2rem;
+  }
+  #nav ul li a {
+    font-size: 2rem;
+  }
+}
+.bemutatkozas-szoveg {
+  background: url("/images/charles-deluvio-pjAH2Ax4uWk-unsplash.jpg");
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.bemutatkozas-szoveg-al {
+  position: absolute;
+  width: 100%;
+}
+.egy {
+  font-size: 3rem;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.ketto {
+  font-size: 1.9rem;
+  top: 55%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 500px) {
+  .egy {
+    font-size: 1.8rem;
+  }
+  .ketto {
+    text-align: justify;
+    font-size: 1.8em;
+    width: 36rem;
+    left: 48%;
+  }
+}
+
+.bemutatkozas-box {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 90vh;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+.tulajdonsag {
+  box-shadow: 5px 10px rgb(206, 206, 206);
+  margin: 2rem;
+  margin-bottom: 10rem;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 26%;
+  height: 90%;
+  background-color: white;
+  color: black;
+  border-radius: 2%;
+  font-size: 3rem;
+  float: left;
+}
+@media (max-width: 500px) {
+  .tulajdonsag {
+    width: 100%;
+    height: 80%;
+  }
+}
+.tulajdonsag:hover {
+  transition: 1s;
+
+  transform: translateY(-2rem) scale(1.1);
+}
+
+.tulajdonsag-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bemutatkozas-kep {
+  background-image: url("/images/fantasy-2995326_1920.jpg");
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+}
+
+footer {
+  margin-bottom: 5rem;
+}
+.h5-mammut {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+.fa-customize-ikonok {
+  font-size: 5rem;
+  color: white;
+  margin: 2rem;
+  margin-left: 7.8rem;
+}
+.fa-customize {
+  font-size: 5rem;
+  color: white;
+  margin: 2rem;
+  float: right;
+  margin-right: 5rem;
+}
+
+.kaland {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -50%);
+  font-size: 5rem;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .kaland {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
+/*!                                WORKS                            */
+.erossegeim {
+  height: 80vh;
+}
+.munkaim-szamok img {
+  width: 35%;
+  float: left;
+  margin: 5rem;
+}
+.munkanev {
+  width: 50%;
+  float: left;
+  margin-left: 3rem;
+  margin-top: 13rem;
+  font-size: 1.8rem;
+}
+.munkanev p {
+  margin-top: 3rem;
+}
+.munkanev a {
+  color: red;
+}
+.munkaim-szamok-1 {
+  position: relative;
+}
+.dijnyertes {
+  margin: 4rem;
+  font-size: 3rem;
+}
+.kepek {
+  position: relative;
+}
+.kepek img {
+  box-shadow: 3px 3px rgb(59, 57, 57);
+  margin: 3rem;
+  width: 25%;
+  float: left;
+}
+@media (max-width: 500px) {
+  .kepek img {
+    width: 80%;
+  }
+}
+.bemutatkozas {
+  position: relative;
+}
+.kepszoveg {
+  float: left;
+}
+.kepszoveg img {
+  width: 40%;
+}
+.kepszoveg header {
+  margin: 5rem;
+  font-size: 1.8rem;
+  float: left;
+  width: 40%;
+}
+.kepszoveg h2 {
+  margin-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  .kepszoveg img {
+    width: 100%;
+    float: none;
+  }
+  .kepszoveg header {
+    margin: 5rem;
+    font-size: 2rem;
+    float: none;
+    width: 80%;
+  }
+}
+.eros-fels {
+  position: relative;
+}
+.erossegfelsorolas {
+  float: left;
+  width: 50%;
+  padding: 5rem;
+}
+.ero {
+  font-size: 2.8rem;
+  margin: 4rem;
+}
+.erossegfelsorolas h3 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+.e {
+  font-size: 1.9rem;
+  margin-left: 3rem;
+}
+.e li {
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .erossegfelsorolas {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .munkaim-szamok-1 img {
+    width: 80%;
+  }
+  .munkanev {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    font-size: 2.3rem;
+    width: 80%;
+  }
+}
+
+.form-szoveg {
+  font-size: 3rem;
+  text-align: center;
+}
+.formm {
+  margin-left: 25rem;
+  font-size: 2rem;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .formm {
+    margin-left: 5rem;
+  }
+}
+#nev,
+#email,
+#uzenet {
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+button {
+  color: black;
+  background-color: white;
+  padding: 2rem;
+  margin-left: 15rem;
+  border-radius: 20%;
+  font-weight: 900;
+  width: 20%;
+}
+input,
+textarea {
+  padding: 1.5rem;
+  font-size: 2rem;
+  width: 55%;
+}
+input,
+textarea {
+  display: block;
+}
+@media (max-width: 500px) {
+  input,
+  textarea {
+    width: 90%;
+  }
+  button {
+    width: 50%;
+    margin-left: 20%;
+  }
+}
